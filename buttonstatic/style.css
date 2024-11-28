@@ -1,0 +1,41 @@
+/* Reset Margin dan Padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gaya untuk konten */
+.content {
+  padding: 50px;
+  font-family: Arial, sans-serif;
+}
+
+/* Gaya untuk tombol tetap di pojok kanan bawah dengan nama kelas unik */
+.unique-fixed-btn {
+  position: fixed;
+  bottom: 20px; /* Jarak dari bawah halaman */
+  right: 20px; /* Jarak dari kanan halaman */
+  padding: 15px 30px;
+  background-color: #25d366; /* Hijau seperti warna logo WhatsApp */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  z-index: 9999; /* Pastikan tombol di lapisan paling depan */
+}
+
+/* Efek saat tombol dihover */
+.unique-fixed-btn:hover {
+  background-color: #128c7e; /* Warna lebih gelap saat dihover (warna hijau lebih gelap dari WhatsApp) */
+}
+
+/* Media Query untuk perangkat mobile */
+@media (max-width: 767px) {
+  .unique-fixed-btn {
+    bottom: 40px; /* Memberikan ruang lebih banyak di bawah tombol pada perangkat mobile */
+  }
+}
